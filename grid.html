@@ -34,9 +34,18 @@
         padding: 0 20px;
     }
 
-    .menu-btns button {
-        margin-left: 10px;
+    .menu-btns {
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+        gap: 10px;
+    }
+
+    .menu-btns div {
+        background: #555;
         padding: 8px 12px;
+        border-radius: 4px;
+        text-align: center;
+        cursor: pointer;
     }
 
     /* SIDEBAR */
@@ -46,12 +55,7 @@
         padding: 20px;
     }
 
-    aside ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    aside ul li {
+    aside div {
         margin: 10px 0;
         cursor: pointer;
     }
@@ -114,19 +118,19 @@
     <header>
         <h2>Logo</h2>
         <div class="menu-btns">
-            <button>H</button>
-            <button>S</button>
-            <button>G</button>
-            <button>C</button>
+            <div>H</div>
+            <div>S</div>
+            <div>G</div>
+            <div>C</div>
         </div>
     </header>
 
     <!-- SIDEBAR -->
     <aside>
-            <div>Home</div>
-            <div>Services</div>
-            <div>Gallery</div>
-            <div>Contact</div>
+        <div>Home</div>
+        <div>Services</div>
+        <div>Gallery</div>
+        <div>Contact</div>
     </aside>
 
     <!-- MAIN CONTENT -->
